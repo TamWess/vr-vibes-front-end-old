@@ -1,0 +1,57 @@
+@import "../../../src/utils/style/libs/mixins.scss";
+@import "../../../src/utils/style/libs/variable.scss";
+
+@font-face {
+	font-family: "Archivo Black";
+	src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+	font-family: "Nunito Sans";
+	src: url(../../../public/fonts/NunitoSans.ttf);
+}
+
+.header{
+	position: fixed;
+	z-index: 10;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: $primary;
+	box-shadow: -5px -4px 7px rgba(255, 255, 255, 0.47), 10px 6px 15px rgba(0, 0, 0, 0.29), inset -2px 0px 4px rgba(0, 0, 0, 0.22), inset 0px 4px 6px rgba(255, 255, 255, 0.34);
+		.headerLogo{
+			width: 100px;
+			padding: 10px;
+			text-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.06), inset 1px 2px 1px rgba(255, 255, 255, 0.34);
+			filter: drop-shadow(-2px -1px 3px rgba(255, 255, 255, 0.27)) drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.29));
+		}
+		.itemsNav{
+			font-size: 20px;
+			text-decoration: none;
+			font-family: "Archivo Black";
+			color: white;
+			text-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.06), inset 1px 2px 1px rgba(255, 255, 255, 0.34);
+			filter: drop-shadow(-2px -1px 3px rgba(255, 255, 255, 0.27)) drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.29));
+		}
+}
+
+.contactButton{
+	/* CSS from Figma - Rectangle 24 */
+	font-family: "Archivo Black";
+	color: white;
+	width: 105px;
+	height: 29px;
+	left: 1304px;
+	top: 21px;
+	background: #006F5C;
+	/* Bouton Neumorphism Pure */
+	box-shadow: -5px -4px 7px rgba(255, 255, 255, 0.47), 10px 6px 15px rgba(0, 0, 0, 0.29), inset -2px 0px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+	border-radius: 11px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	inset:30px 0 0 0;
+	}
+

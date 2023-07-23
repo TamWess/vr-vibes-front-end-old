@@ -1,0 +1,161 @@
+@import "../../../src/utils/style/libs/mixins.scss";
+@import "../../../src/utils/style/libs/variable.scss";
+.home{
+	padding-top: 30px;
+	.accueilImage{
+		position: relative;
+		height: 600px;
+		background-image: url(../../../public/img/vr-vibes-entreprise-accueil.jpg);
+		background-size: cover;
+		display: flex;
+		.titleWhite1{
+			position: absolute;
+			margin: 18% 0 0 3%;
+			font-family: "Archivo Black";
+			font-size: 60px;
+			color: white;
+			text-shadow: 8px 9px 10px rgba(0, 0, 0, 0.6);
+		}
+		.titleTurquoise1{
+			position: absolute;
+			margin: 18% 0 0 11%;
+			font-family: "Archivo Black";
+			font-size: 60px;
+			color: $turquoise;
+			text-shadow: 8px 9px 10px rgba(0, 0, 0, 0.6);
+		}
+		.titleTurquoise2{
+			position: absolute;
+			margin: 24% 0 0 21%;
+			font-family: "Archivo Black";
+			font-size: 60px;
+			color: $turquoise;
+			text-shadow: 8px 9px 10px rgba(0, 0, 0, 0.6);
+		}
+		
+		.titleTurquoise3{
+			position: absolute;
+			margin: 30% 0 0 3%;
+			font-family: "Archivo Black";
+			font-size: 60px;
+			color: $turquoise;
+			text-shadow: 8px 9px 10px rgba(0, 0, 0, 0.6);
+		}
+		
+		.titleWhite2{
+			position: absolute;
+			margin: 30% 0 0 25%;
+			font-family: "Archivo Black";
+			font-size: 60px;
+			color: white;
+			text-shadow: 8px 9px 10px rgba(0, 0, 0, 0.6);
+		}
+	}
+	.entrepriseFamille{
+		z-index: 0;
+		position: relative;
+		height: 734px;
+		background-image: url(../../../public/img/gradient-blue-pink.png);
+		background-size: cover;
+		.titleEntrepriseFamille{
+			z-index: 10;
+			position: absolute;
+			margin: 2% 0 0 12%;
+			font-family: "Archivo Black";
+			font-size: 47px;
+			color: $primaryDark;
+		}
+		.subtitleEntreprise{
+			z-index: 10;
+			position: absolute;
+			font-family: 'Nunito Sans';
+			font-weight: bold;
+			color: $primary;
+			margin: 8% 0 0 7%;
+			font-size: 33px;
+		}
+		.subtitleFamille{
+			z-index: 10;
+			position: absolute;
+			font-family: 'Nunito Sans';
+			font-weight: bold;
+			color: $primary;
+			margin: 8% 0 0 53%;
+			font-size: 33px;
+		}
+		.entrepriseChoice{
+			z-index: 10;
+			position: absolute;
+			margin: 10% 0 0 7%;
+			width: 592px;
+			height: 519px;
+		}
+		.familleChoice{
+			z-index: 10;
+			position: absolute;
+			margin: 11% 0 0 52%;
+			width: 646px;
+			height: 474px;
+		}
+		.reserverEntreprise{
+			z-index: 10;
+			position: absolute;
+			margin: 42% 0 0 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Nunito Sans';
+			text-decoration: none;
+			color: white;
+			font-size: 30px;
+			width: 178px;
+			height: 61px;
+			background: #005F4E;
+			box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+			filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
+			border-radius: 11px;
+		}
+		.reserverFamille{
+			z-index: 10;
+			position: absolute;
+			margin: 42% 0 0 67%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Nunito Sans';
+			text-decoration: none;
+			color: white;
+			font-size: 30px;
+			width: 178px;
+			height: 61px;
+			background: #005F4E;
+			box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+			filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
+			border-radius: 11px;
+		}
+		.frise1, .frise2, .frise3, .frise4, .frise5, .frise6{
+			z-index: 1;
+			position: absolute;
+			margin: 2% 0 0 0;
+			width:100%;
+			opacity: 0.05;
+			filter: drop-shadow(5px 5px 5px #0000008e);
+		}
+		.frise2{
+			
+			margin: 10% 0 0 0;
+		}
+		.frise3{
+			margin: 18% 0 0 0;
+		}
+		.frise4{
+			margin: 26% 0 0 0;
+		}
+		.frise5{
+			margin: 34% 0 0 0;
+		}
+		.frise6{
+			margin: 42% 0 0 0;
+		}
+	}
+}
