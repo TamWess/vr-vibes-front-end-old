@@ -140,30 +140,21 @@
 			position: relative;
 			transition: 1s;
 		}
-		.frise1{
-			z-index: 10;
-			position: relative;
-			width: 100%;
-			height: auto; 
-			margin: 2% 0 0 0;
-			// opacity: 0.05;
-			overflow: hidden;
-			top: 0;
-			right: 0;
-			transition: 1s;
-			background-image: url(../../../public/img/frise-green-pastel.png);
-			background-repeat: repeat-x;
-			background-size: cover;
-			filter: drop-shadow(5px 5px 5px #0000008e);
+		.frise1, .frise3, .frise5{
+			right: -1500px;
 		}
-		.frise2, .frise3, .frise4, .frise5, .frise6{
+		.frise2, .frise4, .frise6{
+			left: -1500px;
+		}
+		.frise1, .frise2, .frise3, .frise4, .frise5, .frise6{
 			overflow: hidden;
 			z-index: 1;
 			position: absolute;
-			margin: 2% 0 0 0;
-			width:100%;
+			margin: 4% 0 0 0;
+			width:200%;
 			opacity: 0.05;
 			filter: drop-shadow(5px 5px 5px #0000008e);
+			transition: 1s;
 		}
 		.frise2{
 			

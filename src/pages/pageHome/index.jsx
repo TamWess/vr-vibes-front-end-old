@@ -26,24 +26,91 @@ function Home() {
 
 	// 840px est la valeur à partir de laquelle le component ImaginezVous apparait
 
-				// window.addEventListener("scroll", function () {
-		// 	if (window.scrollY > 200) {
-		// 	  header.style.top = "-90px";
-		// 	  if (window.scrollY < scroll) {
-		// 		header.style.top = "0px";
-		// 	  }
-		// 	}
-		// 	scroll = window.scrollY;
-		//   });
 		const divFrise = document.querySelector(".friseContainer");
-		const frise = document.querySelector(".frise1");
 
-		let friseRight = 0;
+		// frises défilant de droite à gauche
+		const frise1 = document.querySelector(".frise1");
+		const frise3 = document.querySelector(".frise3");
+		const frise5 = document.querySelector(".frise5");
+	
+		// frises défilant de droite à gauche
+		const frise2 = document.querySelector(".frise2");
+		const frise4 = document.querySelector(".frise4");
+		const frise6 = document.querySelector(".frise6");
+
+
+		
+		let friseRight = -1500;
 
 		setInterval (()=> {
-				frise.style.right = `${friseRight}px`
+				frise1.style.right = `${friseRight}px`
 				friseRight +=20
+
+				if (frise1.style.right> "100px"){
+					friseRight = -1500
+				}
 		}, 1000)
+
+		setInterval (()=> {
+				frise3.style.right = `${friseRight}px`
+				friseRight +=20
+
+				if (frise3.style.right> "100px"){
+					friseRight = -1500
+				}
+		}, 1000)
+
+		setInterval (()=> {
+				frise5.style.right = `${friseRight}px`
+				friseRight +=20
+
+				if (frise5.style.right> "100px"){
+					friseRight = -1500
+				}
+		}, 1000)
+
+		let friseLeft = -1500
+		
+		setInterval (()=> {
+				frise2.style.left = `${friseLeft}px`
+				friseLeft +=20
+
+				if (frise2.style.left> "100px"){
+					friseLeft = -1500
+				}
+		}, 1000)
+
+		setInterval (()=> {
+				frise4.style.left = `${friseLeft}px`
+				friseLeft +=20
+
+				if (frise4.style.left> "100px"){
+					friseLeft = -1500
+				}
+		}, 1000)
+
+		setInterval (()=> {
+				frise6.style.left = `${friseLeft}px`
+				friseLeft +=20
+
+				if (frise6.style.left> "100px"){
+					friseLeft = -1500
+				}
+		}, 1000)
+// setTimeout(()=>{
+		
+// 	},1000)
+// 		console.log(frise1.style.right);
+
+		// let friseLeft = -2100;
+
+		// setInterval (()=> {
+		// 		frise2.style.right = `${friseLeft}px`
+		// 		friseLeft +=20
+		// }, 1000)
+		// if (frise2.style.left> "100px"){
+		// 	frise2.style.left = "-1800px"
+		// }
   })
    
   return (
@@ -64,14 +131,15 @@ function Home() {
 			<img className="familleChoice" src="/img/family-choice.png"/>
 			<Link className="reserverEntreprise" to="EvenementEntreprise">Réserver</Link>
 			<Link className="reserverFamille" to="EvenementFamille">Réserver</Link>
-
-				<div className="frise1"/>
+				{/* <div className="friseContainer"> */}
+			<img className="frise1" src="/img/frise-double-green-pastel.png" alt="okay"/>
+				{/* </div> */}
 			
-			<img className="frise2" src="/icns/frise-green.png"/>
-			<img className="frise3" src="/icns/frise-green.png"/>
-			<img className="frise4" src="/icns/frise-green.png"/>
-			<img className="frise5" src="/icns/frise-green.png"/>
-			<img className="frise6" src="/icns/frise-green.png"/>
+			<img className="frise2" src="/img/frise-double-green-pastel.png"/>
+			<img className="frise3" src="/img/frise-double-green-pastel.png"/>
+			<img className="frise4" src="/img/frise-double-green-pastel.png"/>
+			<img className="frise5" src="/img/frise-double-green-pastel.png"/>
+			<img className="frise6" src="/img/frise-double-green-pastel.png"/>
 		</div>
 		<ImaginezVous/>
 		<SimpleSlider/>
