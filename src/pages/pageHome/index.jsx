@@ -7,6 +7,7 @@ import "../../utils/style/libs/base.scss"
 import "./style.scss"
 import Reassurance from "../../components/reassurance/reassurance.brands";
 import ImaginezVous from "../../components/imaginez.vous/imaginez.vous";
+import SimpleSlider from "../../components/carousels/carouselHome";
 
 // import Slideshow from "../../../src/components/slide/index";
 // import "../../components/slide/style.scss"
@@ -16,15 +17,11 @@ import ImaginezVous from "../../components/imaginez.vous/imaginez.vous";
 function Home() {
 
   useEffect(() => {
-	// 	const parallax = rallax('.parallax')
-	// 	window.addEventListener("scroll", function () {
-	// 		if (window.scrollY > 200) {
-	// 			parallax.stop()
-	// 	}
-	// }
-	// )
+
+	// Pour observer les différents niveaux de scroll, utiliser le console.log ci-dessous
+
 	window.addEventListener("scroll", (e) => {
-		console.log(window.scrollY);
+		// console.log(window.scrollY);
 	})
 
 	// 840px est la valeur à partir de laquelle le component ImaginezVous apparait
@@ -38,10 +35,17 @@ function Home() {
 		// 	}
 		// 	scroll = window.scrollY;
 		//   });
+		const divFrise = document.querySelector(".friseContainer");
+		const frise = document.querySelector(".frise1");
 
+		let friseRight = 0;
+
+		setInterval (()=> {
+				frise.style.right = `${friseRight}px`
+				friseRight +=20
+		}, 1000)
   })
    
-
   return (
     <div className="home">
 		<div className="accueilImage">
@@ -60,13 +64,17 @@ function Home() {
 			<img className="familleChoice" src="/img/family-choice.png"/>
 			<Link className="reserverEntreprise" to="EvenementEntreprise">Réserver</Link>
 			<Link className="reserverFamille" to="EvenementFamille">Réserver</Link>
-			<img className="frise1" src="/icns/frise-green.png"/>
+
+				<div className="frise1"/>
+			
 			<img className="frise2" src="/icns/frise-green.png"/>
+			<img className="frise3" src="/icns/frise-green.png"/>
 			<img className="frise4" src="/icns/frise-green.png"/>
 			<img className="frise5" src="/icns/frise-green.png"/>
 			<img className="frise6" src="/icns/frise-green.png"/>
 		</div>
 		<ImaginezVous/>
+		<SimpleSlider/>
     </div>
   );
 }

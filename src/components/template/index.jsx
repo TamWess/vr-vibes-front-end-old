@@ -28,6 +28,9 @@ function Template() {
         <Outlet />
       </section>
       <footer>
+	  	<img className="friseGreenPastel" src="/img/frise-pastel.png" alt="" />
+	  	<img className="friseGreenPastel" src="/img/frise-green-pastel.png" alt="" />
+	  	<img className="friseFooter" src="/img/frise-footer.png" alt="" />
         <div className="footer">
           <div className="footerDiv01">
             <p>Mentions légales</p>
