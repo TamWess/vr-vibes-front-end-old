@@ -1,4 +1,5 @@
 .reassuranceBrands{
+	height: 70px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -9,12 +10,11 @@
 
 	.nosPartenaires{
 		font-family: "Archivo Black";
-		font-size: 25px;
-		color: black;
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.819);
 	}
 	.logoPartenaires{
-		padding: 10px;
-		width: 200px;
+		width: 170px;
 		opacity: 55%;
 	}
 }
