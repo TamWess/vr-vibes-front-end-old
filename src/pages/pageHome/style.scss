@@ -1,5 +1,8 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
+.body{
+	overflow: hidden;
+}
 .home{
 	padding-top: 30px;
 	.accueilImage{

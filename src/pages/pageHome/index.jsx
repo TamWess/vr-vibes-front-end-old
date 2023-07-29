@@ -8,6 +8,7 @@ import "./style.scss"
 import Reassurance from "../../components/reassurance/reassurance.brands";
 import ImaginezVous from "../../components/imaginez.vous/imaginez.vous";
 import SimpleSlider from "../../components/carousels/carouselHome";
+import AvisUtilisateurs from "../../components/avis.utilisateurs/avis.utilisateurs";
 
 // import Slideshow from "../../../src/components/slide/index";
 // import "../../components/slide/style.scss"
@@ -123,6 +124,7 @@ function Home() {
 			<h2 className="titleWhite2">PARFAIT !</h2>
 		</div>
 		<Reassurance/>
+		<AvisUtilisateurs/>
 		<div className="entrepriseFamille">
 			<h2 className="titleEntrepriseFamille">RENDEZ VOTRE ÉVÉNEMENT OUBLIABLE !</h2>
 			<h3 className="subtitleEntreprise">Team Building, Afterwork, Séminaire ...</h3>

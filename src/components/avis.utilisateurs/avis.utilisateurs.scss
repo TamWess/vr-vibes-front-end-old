@@ -1,0 +1,189 @@
+@font-face {
+	font-family: "Nunito Sans";
+	src: url(../../../public/fonts/NunitoSans.ttf);
+}
+@font-face {
+	font-family: "Archivo Black";
+	src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
+}
+.sectionUsers{
+	display: flex;
+	flex-wrap: wrap;
+	width:100%;
+	height: fit-content;
+	// padding: 3% 0 3% 0;
+	.user1div{
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1% 0 1% 0;
+		background-color: rgb(255, 248, 208);
+		.user1{
+			margin: 0 0 1% 3%;
+			width: 60%;
+			height: 150px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.imageUser{
+				height: 100%;
+				border-radius: 50%;
+			}
+			.informationsUser{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				width: 68%
+			}
+			.commentaireUser{
+				padding-top: 20px;
+				width: 100%;
+				height: 50%;
+				line-height: 26px;
+				font-family: "Nunito Sans";
+			    font-size: 19px;
+				font-style: italic;
+			}
+			.nameUser{
+				width: 100%;
+				height: 10%;
+				font-family: "Archivo Black";
+				font-size: 19px;
+				font-weight: bold;
+			}
+			.entrepriseUser{
+				width: 35%;
+			}
+		}
+	}
+	.user2div{
+		width: 50%;
+		padding: 1% 0 1% 0;
+		background-color: rgb(255, 232, 243);
+		.user2{
+			margin: 0 0 1% 17%;
+			width: 60%;
+			height: 150px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.imageUser2{
+				height: 100%;
+				border-radius: 50%;
+			}
+			.informationsUser2{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				width: 68%
+			}
+			.commentaireUser2{
+				padding-top: 20px;
+				width: 100%;
+				height: 50%;
+				line-height: 26px;
+				font-family: "Nunito Sans";
+			    font-size: 19px;
+				font-style: italic;
+			}
+			.nameUser2{
+				width: 100%;
+				height: 10%;
+				font-family: "Archivo Black";
+				font-size: 19px;
+				font-weight: bold;
+			}
+			.entrepriseUser2{
+				width: 35%;
+			}
+		}
+	}
+	.user3div{
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1% 0 1% 0;
+		background-color: rgb(231, 255, 247);
+		.user3{
+			margin: 0 0 1% 3%;
+			width: 60%;
+			height: 150px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.imageUser3{
+				height: 100%;
+				border-radius: 50%;
+			}
+			.informationsUser3{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				width: 68%
+			}
+			.commentaireUser3{
+				padding-top: 20px;
+				width: 100%;
+				height: 50%;
+				line-height: 26px;
+				font-family: "Nunito Sans";
+			    font-size: 19px;
+				font-style: italic;
+			}
+			.nameUser3{
+				width: 100%;
+				height: 10%;
+				font-family: "Archivo Black";
+				font-size: 19px;
+				font-weight: bold;
+			}
+			.entrepriseUser3{
+				width: 35%;
+			}
+		}
+	}
+	.user4div{
+		width: 50%;
+		padding: 1% 0 1% 0;
+		background-color: rgb(235, 237, 255);
+		.user4{
+			margin: 0 0 1% 17%;
+			width: 60%;
+			height: 150px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.imageUser4{
+				height: 100%;
+				border-radius: 50%;
+			}
+			.informationsUser4{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				width: 68%
+			}
+			.commentaireUser4{
+				padding-top: 20px;
+				width: 100%;
+				height: 50%;
+				line-height: 26px;
+				font-family: "Nunito Sans";
+			    font-size: 19px;
+				font-style: italic;
+			}
+			.nameUser4{
+				width: 100%;
+				height: 10%;
+				font-family: "Archivo Black";
+				font-size: 19px;
+				font-weight: bold;
+			}
+			.entrepriseUser4{
+				width: 35%;
+			}
+		}
+	}
+
+	
+}
