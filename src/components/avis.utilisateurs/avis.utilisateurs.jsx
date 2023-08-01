@@ -8,29 +8,29 @@ function AvisUtilisateurs (){
 
 	useEffect( () => {
 
-		const centeredElement = document.querySelector('.circle');
+		// const centeredElement = document.querySelector('.circle');
 
-        // Fonction pour centrer l'élément sur l'axe horizontal
-        function centerElementHorizontally() {
-            const windowWidth = window.innerWidth;
-            const elementWidth = centeredElement.offsetWidth;
-            const offsetLeft = (windowWidth - elementWidth) / 2.03;
-			console.log(windowWidth);
+        // // Fonction pour centrer l'élément sur l'axe horizontal
+        // function centerElementHorizontally() {
+        //     const windowWidth = window.innerWidth;
+        //     const elementWidth = centeredElement.offsetWidth;
+        //     const offsetLeft = (windowWidth - elementWidth) / 2.03;
+		// 	console.log(windowWidth);
 
-            centeredElement.style.transform = `translateX(${offsetLeft}px)`;
+        //     centeredElement.style.transform = `translateX(${offsetLeft}px)`;
 
 			
-        }
+        // }
 
-        // Centrer l'élément au chargement de la page
-        centerElementHorizontally();
+        // // Centrer l'élément au chargement de la page
+        // centerElementHorizontally();
 
 
 	})
 
 	return (
 		<div className="sectionUsers">
-			<div className="circle"/>
+			<img src="/icns/vr-vibes-logo-smileys.svg" className="circle"/>
 			<div className="user1div">
 				<div className="user1">
 					<img className="imageUser" src="/img/severin-richter.jpg" alt="severin richter commentaire vr-vibes vr vibes ponticelli réalité virtuelle virtual reality"/>

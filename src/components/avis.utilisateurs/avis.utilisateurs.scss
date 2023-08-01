@@ -9,10 +9,11 @@
 .circle{
 	z-index: 20;
 	position: absolute;
-	height: 400px;
-	width: 400px;
-	background-color: aqua;
-	clip-path: circle(17.6% at 51% 51%);
+	height: 200px;
+	width: 200px;
+	// clip-path: circle(17.6% at 51% 51%);
+	left: calc(50% - 100px);
+	top: calc(50% - 100px);
 }
 .sectionUsers{
 	z-index: 8;
