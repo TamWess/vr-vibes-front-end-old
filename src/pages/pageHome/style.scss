@@ -1,16 +1,28 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
+
 .body{
 	overflow: hidden;
 }
 .home{
 	padding-top: 30px;
 	.accueilImage{
+		z-index: 9;
 		position: relative;
 		height: 600px;
-		background-image: url(../../../public/img/vr-vibes-entreprise-accueil.jpg);
+		background-image: url(../../../public/img/vr-vibes-home-image.jpg);
 		background-size: cover;
 		display: flex;
+		animation: clip 4s 1;
+		animation-fill-mode: forwards;
+		@keyframes clip {
+			from {
+				clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+			}
+			to {
+				clip-path: polygon(73% 0, 73% 0, 30% 100%, 30% 100%);
+			}
+		}
 		.titleWhite1{
 			position: absolute;
 			margin: 18% 0 0 3%;
@@ -53,127 +65,45 @@
 			color: white;
 			text-shadow: 8px 9px 10px rgba(0, 0, 0, 0.6);
 		}
+	}	
+	.logoVRvibes{
+		z-index: 10;
+		position: absolute;
+		height: 150px;
+		margin-left: 37%;
+		margin-top: 230px;
+		clip-path: polygon(0% 0%, 60% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+		animation: logoAnimation 3s 1;
+		animation-delay: 5s;
+		animation-fill-mode: forwards;
 	}
-	.entrepriseFamille{
-		z-index: 0;
-		position: relative;
-		height: 734px;
-		background-image: url(../../../public/img/gradient-blue-pink.png);
+	.imageVREntreprise{
+		z-index: 7 !important;
+		position: absolute;
+		background-image: url(../../../public/img/vr-vibes-entreprise-accueil-test.jpg);
+		background-color: aquamarine;
+		width: 100%;
+		height: 600px;
 		background-size: cover;
-		.titleEntrepriseFamille{
-			z-index: 10;
-			position: absolute;
-			margin: 2% 0 0 12%;
-			font-family: "Archivo Black";
-			font-size: 47px;
-			color: $primaryDark;
-		}
-		.subtitleEntreprise{
-			z-index: 10;
-			position: absolute;
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color: $primary;
-			margin: 8% 0 0 7%;
-			font-size: 33px;
-		}
-		.subtitleFamille{
-			z-index: 10;
-			position: absolute;
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color: $primary;
-			margin: 8% 0 0 53%;
-			font-size: 33px;
-		}
-		.entrepriseChoice{
-			z-index: 10;
-			position: absolute;
-			margin: 10% 0 0 7%;
-			width: 592px;
-			height: 519px;
-		}
-		.familleChoice{
-			z-index: 10;
-			position: absolute;
-			margin: 11% 0 0 52%;
-			width: 646px;
-			height: 474px;
-		}
-		.reserverEntreprise{
-			z-index: 10;
-			position: absolute;
-			margin: 42% 0 0 20%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-family: 'Nunito Sans';
-			text-decoration: none;
-			color: white;
-			font-size: 30px;
-			width: 178px;
-			height: 61px;
-			background: #005F4E;
-			box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
-			filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
-			border-radius: 11px;
-		}
-		.reserverFamille{
-			z-index: 10;
-			position: absolute;
-			margin: 42% 0 0 67%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-family: 'Nunito Sans';
-			text-decoration: none;
-			color: white;
-			font-size: 30px;
-			width: 178px;
-			height: 61px;
-			background: #005F4E;
-			box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
-			filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
-			border-radius: 11px;
-		}
-		.friseContainer{
-			right: 0;
-			width: 100%; /* Ajustez la largeur selon vos besoins */
-			height: 110px; /* Ajustez la hauteur selon vos besoins */
-			position: relative;
-			transition: 1s;
-		}
-		.frise1, .frise3, .frise5{
-			right: -1500px;
-		}
-		.frise2, .frise4, .frise6{
-			left: -1500px;
-		}
-		.frise1, .frise2, .frise3, .frise4, .frise5, .frise6{
-			overflow: hidden;
-			z-index: 1;
-			position: absolute;
-			margin: 4% 0 0 0;
-			width:200%;
-			opacity: 0.05;
-			filter: drop-shadow(5px 5px 5px #0000008e);
-			transition: 1s;
-		}
-		.frise2{
-			
-			margin: 10% 0 0 0;
-		}
-		.frise3{
-			margin: 18% 0 0 0;
-		}
-		.frise4{
-			margin: 26% 0 0 0;
-		}
-		.frise5{
-			margin: 34% 0 0 0;
-		}
-		.frise6{
-			margin: 42% 0 0 0;
-		}
+		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
+		clip-path: polygon(0 0, 73% 0, 30% 100%, 0% 100%);
+	}
+	.imageVRFamille{
+		z-index: 7 !important;
+		position: absolute;
+		background-color: rgb(255, 221, 254);
+		background-image: url(../../../public/img/vr-vibes-famille-accueil-test.jpg);
+		width: 100%;
+		height: 600px;
+		background-size: cover;
+		clip-path: polygon(73% 0, 100% 0, 100% 100%, 30% 100%);
+	}
+}
+@keyframes logoAnimation {
+	from{
+		clip-path: polygon(77% 0, 77% 0, 31% 100%, 31% 100%);
+	}
+	to{
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 	}
 }

@@ -17,8 +17,8 @@ function Template() {
               alt="VR Vibes logo entreprise réalité virtuelle animation VR événement Paris ">
 			</img>
           </Link>
-		  <Link to="" className="itemsNav">Animation pour Entreprise</Link>
-		  <Link to="" className="itemsNav">Animation Événements Familiaux</Link>
+		  <Link to="" className="itemsNav">Animation VR pour Entreprise</Link>
+		  <Link to="" className="itemsNav">Animation VR pour Événements Familiaux</Link>
 		  <Link to="" className="itemsNav">Productions VR</Link>
 		  <Link to="" className="contactButton">Contact</Link>
         </div>

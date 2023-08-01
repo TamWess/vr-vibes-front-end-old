@@ -6,7 +6,17 @@
 	font-family: "Archivo Black";
 	src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
 }
+.circle{
+	z-index: 20;
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	background-color: aqua;
+	clip-path: circle(17.6% at 51% 51%);
+}
 .sectionUsers{
+	z-index: 8;
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	width:100%;
@@ -184,6 +194,4 @@
 			}
 		}
 	}
-
-	
 }
