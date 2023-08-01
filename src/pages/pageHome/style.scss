@@ -67,11 +67,11 @@
 		}
 	}	
 	.logoVRvibes{
-		z-index: 10;
+		z-index: 9;
 		position: absolute;
 		height: 150px;
-		margin-left: 37%;
-		margin-top: 230px;
+		left: calc(50% - 156px);
+    	top: calc(50% - 170px);
 		clip-path: polygon(0% 0%, 60% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
 		animation: logoAnimation 3s 1;
 		animation-delay: 5s;
