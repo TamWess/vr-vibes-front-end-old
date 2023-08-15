@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import Slider from "react-slick";
-import "./slick.css";
-import "./slick-theme.css";
+import "./slick.scss";
+import "./slick-theme.scss";
 
 export default class SimpleSlider extends Component {
+
   render() {
     const settings = {
       dots: true,
@@ -12,6 +13,7 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
+
     return (
         <Slider {...settings}>
           <img className="carouselHomeImages" src="/img/vader-immortal-episode-3.JPG" alt=""/>

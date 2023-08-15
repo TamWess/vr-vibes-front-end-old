@@ -202,3 +202,11 @@
     opacity: .75;
     color: black;
 }
+
+// --------RESPONSIVE--------
+
+@media screen and (max-width: 576px) {
+	.slick-dots{
+		margin-bottom: 25px;
+	}
+}

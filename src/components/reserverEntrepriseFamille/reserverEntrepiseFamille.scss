@@ -4,92 +4,109 @@
 .entrepriseFamille{
 	z-index: 0;
 	position: relative;
-	height: 734px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: fit-content;
 	background-image: url(../../../public/img/gradient-blue-pink.png);
 	background-size: cover;
 	.titleEntrepriseFamille{
+		margin: 45px 0 15px 0;
+		position: relative;
+		height: 4vh;
 		z-index: 10;
-		position: absolute;
-		margin: 2% 0 0 12%;
 		font-family: "Archivo Black";
 		font-size: 47px;
 		color: $primaryDark;
 	}
-	.subtitleEntreprise{
-		z-index: 10;
-		position: absolute;
-		font-family: 'Nunito Sans';
-		font-weight: bold;
-		color: $primary;
-		margin: 8% 0 0 7%;
-		font-size: 33px;
-	}
-	.subtitleFamille{
-		z-index: 10;
-		position: absolute;
-		font-family: 'Nunito Sans';
-		font-weight: bold;
-		color: $primary;
-		margin: 8% 0 0 53%;
-		font-size: 33px;
-	}
-	.entrepriseChoice{
-		z-index: 10;
-		position: absolute;
-		margin: 10% 0 0 7%;
-		width: 592px;
-		height: 519px;
-	}
-	.familleChoice{
-		z-index: 10;
-		position: absolute;
-		margin: 11% 0 0 52%;
-		width: 646px;
-		height: 474px;
-	}
-	.reserverEntreprise{
-		z-index: 10;
-		position: absolute;
-		margin: 42% 0 0 20%;
+	.entreprise{
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		align-items: center;
-		font-family: 'Nunito Sans';
-		text-decoration: none;
-		color: white;
-		font-size: 30px;
-		width: 178px;
-		height: 61px;
-		background: #005F4E;
-		box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
-		filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
-		border-radius: 11px;
+		width:50%;
+		height: fit-content;
+		margin-bottom: 50px;
+		.subtitleEntreprise{
+			z-index: 10;
+			width: 100%;
+			position: relative;
+			font-family: 'Nunito Sans';
+			font-weight: bold;
+			color: $primary;
+			margin: 8% 0 0 7%;
+			font-size: 33px;
+		}
+		.entrepriseChoice{
+			width: 100%;
+			z-index: 10;
+			position: relative;
+			width: 646px;
+			height: 474px;
+		}
+		.reserverEntreprise{
+			z-index: 10;
+			position: relative;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Nunito Sans';
+			text-decoration: none;
+			color: white;
+			font-size: 30px;
+			width: 178px;
+			height: 61px;
+			background: #005F4E;
+			box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+			filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
+			border-radius: 11px;
+		}
 	}
-	.reserverFamille{
-		z-index: 10;
-		position: absolute;
-		margin: 42% 0 0 67%;
+	.famille{
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		align-items: center;
-		font-family: 'Nunito Sans';
-		text-decoration: none;
-		color: white;
-		font-size: 30px;
-		width: 178px;
-		height: 61px;
-		background: #005F4E;
-		box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
-		filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
-		border-radius: 11px;
+		width:50%;
+		height: fit-content;
+		.subtitleFamille{
+			z-index: 10;
+			width: 100%;
+			position: relative;
+			font-family: 'Nunito Sans';
+			font-weight: bold;
+			color: $primary;
+			margin: 8% 0 0 7%;
+			font-size: 33px;
+		}
+		.familleChoice{
+			width: 100%;
+			z-index: 10;
+			position: relative;
+			width: 646px;
+			height: 474px;
+		}
+		.reserverFamille{
+			z-index: 10;
+			width: 100%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Nunito Sans';
+			text-decoration: none;
+			color: white;
+			font-size: 30px;
+			width: 178px;
+			height: 61px;
+			background: #005F4E;
+			box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+			filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
+			border-radius: 11px;
+		}
+
 	}
-	.friseContainer{
-		right: 0;
-		width: 100%; /* Ajustez la largeur selon vos besoins */
-		height: 110px; /* Ajustez la hauteur selon vos besoins */
-		position: relative;
-		transition: 1s;
-	}
+	
+	
 	.frise1, .frise3, .frise5{
 		right: -1500px;
 	}
@@ -123,3 +140,95 @@
 		margin: 42% 0 0 0;
 	}
 }
+
+// ----------RESPONSIVE----------
+
+@media screen and (max-width: 576px) {
+
+	.entrepriseFamille{
+		z-index: 0;
+		position: relative;
+		height: 1015px;
+		background-image: url(../../../public/img/gradient-blue-pink.png);
+		background-size: cover;
+		.titleEntrepriseFamille{
+			padding-top: 25px;
+			position: relative;
+			text-align: center;
+			margin: auto;
+			font-size: 23px;
+		}
+		.subtitleEntreprise{
+			text-align: center;
+			z-index: 10;
+			position: relative;
+			font-family: 'Nunito Sans';
+			font-weight: bold;
+			color: $primary;
+			margin: 6% 0 0 7%;
+			font-size: 23px;
+		}
+		.entrepriseChoice{
+			z-index: 10;
+			position: relative;
+			margin: 0% 0 0 7%;
+			width: 345px;
+			height: 300px;
+		}
+		.reserverEntreprise{
+			z-index: 10;
+			position: relative;
+			margin: auto;
+			margin-top: -30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Nunito Sans';
+			text-decoration: none;
+			color: white;
+			font-size: 30px;
+			width: 178px;
+			height: 61px;
+			background: #005F4E;
+			box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+			filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
+			border-radius: 11px;
+		}
+		.subtitleFamille{
+			z-index: 10;
+			position: relative;
+			text-align: center;
+			font-family: 'Nunito Sans';
+			font-weight: bold;
+			color: $primary;
+			margin: auto;
+			font-size: 23px;
+			padding-top: 60px;
+		}
+		.familleChoice{
+			margin: 1% 0 0 5%;
+			width: 367px;
+			height: 290px;
+		}
+		.reserverFamille{
+			z-index: 10;
+			position: relative;
+			margin: auto;
+			margin-top: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Nunito Sans';
+			text-decoration: none;
+			color: white;
+			font-size: 30px;
+			width: 178px;
+			height: 61px;
+			background: #005F4E;
+			box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+			filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86)) drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
+			border-radius: 11px;
+		}
+	}
+}
+

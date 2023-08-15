@@ -13,7 +13,7 @@ function AvisUtilisateurs (){
         // // Fonction pour centrer l'élément sur l'axe horizontal
         // function centerElementHorizontally() {
         //     const windowWidth = window.innerWidth;
-        //     const elementWidth = centeredElement.offsetWidth;
+        //     const elementWidth = centeredElement.offsetWidth; 
         //     const offsetLeft = (windowWidth - elementWidth) / 2.03;
 		// 	console.log(windowWidth);
 
@@ -45,13 +45,13 @@ function AvisUtilisateurs (){
 			
 			<div className="user2div">
 				<div className="user2">
+					<img className="imageUser2" src="/img/irene-lim.jpg" alt="severin richter commentaire vr-vibes vr vibes ponticelli réalité virtuelle virtual reality"/>
 					<div className="informationsUser2">
 						<div className="commentaireUser2">" L'animation VR pour l'anniversaire de mon fils de 10 ans était géniale. Les enfants ce sont beaucoup amusés et étaient fascinés " 
 						</div>
 						<div className="nameUser2">Irène LIM</div>
 						<img className="entrepriseUser2" src="" alt=""/>
 					</div>
-					<img className="imageUser2" src="/img/irene-lim.jpg" alt="severin richter commentaire vr-vibes vr vibes ponticelli réalité virtuelle virtual reality"/>
 				</div>
 			</div>
 			<div className="line"/>
@@ -70,14 +70,13 @@ function AvisUtilisateurs (){
 
 			<div className="user4div">
 				<div className="user4">
+					<img className="imageUser4" src="/img/severin-richter.jpg" alt="severin richter commentaire vr-vibes vr vibes ponticelli réalité virtuelle virtual reality"/>
 					<div className="informationsUser4">
-						<div className="commentaireUser4">" Très satisfait Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo 		
-							amet molestias laboriosam pariatur " 
+						<div className="commentaireUser4">" Très satisfait Lorem ipsum dolor sit amet consectetur adipisicing elit.  " 
 						</div>
 						<div className="nameUser4">Séverin RICHTER</div>
 						<img className="entrepriseUser4" src="/icns/ponticelli-logo.png" alt=""/>
 					</div>
-					<img className="imageUser4" src="/img/severin-richter.jpg" alt="severin richter commentaire vr-vibes vr vibes ponticelli réalité virtuelle virtual reality"/>
 				</div>
 			</div>
 		</div>

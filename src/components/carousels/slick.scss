@@ -122,3 +122,17 @@
 	width: 1872px;
 	height: 475px;
 }
+
+// ---------RESPONSIVE---------
+
+@media screen and (max-width: 576px) {
+	.slick-track{
+		height: 210px;
+	}
+	.carouselHomeImages{
+		margin: 40px 0 40px 0;
+		width: 1872px;
+		height: 120px;
+	}
+}
+

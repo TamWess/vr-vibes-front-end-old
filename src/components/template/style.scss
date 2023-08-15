@@ -21,11 +21,20 @@
 	background-color: $primary;
 	box-shadow: -5px -4px 7px rgba(255, 255, 255, 0.47), 10px 6px 15px rgba(0, 0, 0, 0.29), inset -2px 0px 4px rgba(0, 0, 0, 0.22), inset 0px 4px 6px rgba(255, 255, 255, 0.34);
 		.headerLogo{
+			position: relative;
 			width: 100px;
 			padding: 10px;
-			text-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.06), inset 1px 2px 1px rgba(255, 255, 255, 0.34);
-			filter: drop-shadow(-2px -1px 3px rgba(255, 255, 255, 0.27)) drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.29));
+			animation-duration: 1s;
+			transition: 500ms;
 		}
+		.headerLogo:hover{
+			// box-shadow:
+			// 0 0 5px 3px #fff, 
+			// 0 0 10px 5px #f0f,
+			// 0 0 15px 8px #0ff;
+			filter: drop-shadow(0px 0px 7px rgb(235, 164, 255));
+		}
+		
 		.itemsNav{
 			font-size: 20px;
 			text-decoration: none;
@@ -33,6 +42,10 @@
 			color: white;
 			text-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.06), inset 1px 2px 1px rgba(255, 255, 255, 0.34);
 			filter: drop-shadow(-2px -1px 3px rgba(255, 255, 255, 0.27)) drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.29));
+			transition: 500ms;
+		}
+		.itemsNav:hover{
+			filter: drop-shadow(0px 0px 7px rgba(235, 164, 255, 0.585));
 		}
 }
 
@@ -53,6 +66,14 @@
 	justify-content: center;
 	align-items: center;
 	inset:30px 0 0 0;
+	transition: 500ms;
+	}
+	.contactButton:hover{
+		// box-shadow:
+		// 0 0 5px 3px #fff, 
+		// 0 0 10px 5px #f0f,
+		// 0 0 15px 8px #0ff;
+		filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.709));
 	}
 	.friseGreenPastel{
 		z-index: 8;
@@ -79,6 +100,7 @@
 		width: 100%;
 		height: 350px;
 		background: url(../../../public/img/background-footer-green-gradient.png) repeat;
+		background-size: cover;
 		transition: 1.5s;
 		.footerDiv01, .footerDiv02, .footerDiv03, .footerDiv04, .footerDiv05{
 			font-size: 20px;
@@ -121,3 +143,136 @@
 		}
 	}
 
+
+	// -------------------RESPONSIVE------------------
+
+	@media screen and (max-width: 576px){
+		body{
+			width: 100%;
+			overflow-x: hidden;
+		}
+		.header{
+			position: fixed;
+			z-index: 10;
+			display: flex;
+			flex-wrap: wrap;
+			// justify-content: space-around;
+			align-items: center;
+			width: 100%;
+				.headerLogo{
+					width: 20vw;
+					padding: 10px;
+					left: -60px;
+					animation-duration: 1s;
+					transition: 500ms;
+				}
+				.headerLogo:hover{
+					// box-shadow:
+					// 0 0 5px 3px #fff, 
+					// 0 0 10px 5px #f0f,
+					// 0 0 15px 8px #0ff;
+					filter: drop-shadow(0px 0px 7px rgb(235, 164, 255));
+				}
+				.itemsNav{
+					display: none;
+					font-size: 0px;
+					text-decoration: none;
+					font-family: "Archivo Black";
+					color: white;
+					text-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.06), inset 1px 2px 1px rgba(255, 255, 255, 0.34);
+					filter: drop-shadow(-2px -1px 3px rgba(255, 255, 255, 0.27)) drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.29));
+					transition: 500ms;
+				}
+				.itemsNav:hover{
+					filter: drop-shadow(0px 0px 7px rgba(235, 164, 255, 0.585));
+				}
+		}
+		
+		.contactButton{
+			/* CSS from Figma - Rectangle 24 */
+			font-family: "Archivo Black";
+			font-size: 0px;
+			color: white;
+			width: 0px;
+			height: 0px;
+			left: 0px;
+			top: 0px;
+			background: #006F5C;
+			/* Bouton Neumorphism Pure */
+			box-shadow: -5px -4px 7px rgba(255, 255, 255, 0.47), 10px 6px 15px rgba(0, 0, 0, 0.29), inset -2px 0px 4px rgba(0, 0, 0, 0.22), inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+			border-radius: 0px;
+			text-decoration: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			inset:0px 0 0 0;
+			transition: 500ms;
+			}
+			.contactButton:hover{
+				// box-shadow:
+				// 0 0 5px 3px #fff, 
+				// 0 0 10px 5px #f0f,
+				// 0 0 15px 8px #0ff;
+				filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.709));
+			}
+			.footer{
+				// position: relative;
+				overflow-y: hidden;
+				font-family: "Archivo Black";
+				color: rgb(255, 255, 255);
+				justify-content: space-around;
+				display: flex;
+				width: 100%;
+				height: 50vh;
+				background: url(../../../public/img/background-footer-green-gradient.png);
+				background-size: cover;
+				transition: 1.5s;
+				.footerDiv01, .footerDiv02, .footerDiv03, .footerDiv04, .footerDiv05{
+					left: 3%;
+					position: relative;
+					width: 22%;
+					font-size: 12px;
+					font-family: "Archivo Black";
+					margin-top: 23%;
+					margin-bottom: 30%;
+					color: rgb(255, 255, 255);
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+				.footerDiv01{
+					left: 4%
+				}
+			
+				.footerDiv03{
+					display: none;
+				}
+			
+				.locationLogo img{
+					margin-left: 45%;
+				}
+			
+			
+				.tempGoogleMap {
+					z-index: 1;
+					padding: 0 40px 40px 40px;
+					height: 120px;
+					background: white;
+				}
+			
+				.footerDiv05{
+					color: white;
+					display: flex;
+					flex-direction: column;
+					width: 9%;
+				}
+			
+				.footerDiv05 img{
+					height: 33px;
+					filter: invert(100%) sepia(0%) saturate(7478%) hue-rotate(183deg) brightness(99%) contrast(97%);
+				}
+				// .footerDiv04{
+				// 	display: none;
+				// }
+			}
+	} 

@@ -194,3 +194,58 @@
 		rotate: -360deg;
 	}
 }
+
+// ------------RESPONSIVE------------
+
+@media screen and (max-width: 576px) {
+	
+	.imaginezVous{
+		position: relative;
+		height: 1000px;
+		.background{
+			height: 1000px;
+			width: 1500px;
+		};
+		.vaisseau{
+			left: 0%;
+			margin-top: -320px;
+		};
+		.vaisseau2{
+			left: 50%;
+			margin-top: 0px;
+		};
+		.vaisseau3{
+			left: 40%;
+			margin-top: 630px;
+		};
+		.planet{
+			left: 20%;
+			margin-top: -40px;
+		};
+		.mustafar{
+			height: 800px;
+			left: -200px;
+			margin-top: -500px;
+		};
+		.title{
+			font-size: 32px;
+			margin: 20px 0 0 30px;
+			left: 2000px;
+		};
+		.text1, .text2, .text3{
+			font-size: 20px;
+			line-height: 1.3;
+			left: 2000px;
+			position: absolute;
+			margin: 80px 0 0 30px;
+			filter: drop-shadow(-8px -8px 13px rgba(0, 0, 0, 0.86)) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.29));
+		};
+		.text2{
+			margin-top: 330px;
+		}
+		.text3{
+			margin-top: 610px;
+		}
+	}
+	
+}
