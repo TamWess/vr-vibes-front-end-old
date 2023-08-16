@@ -2,6 +2,8 @@
 @import "../../utils/style/libs/variable.scss";
 
 .banniere{
+	overflow-y: hidden;
+    overflow-x: hidden;
 	z-index: 9;
 	width: 100%;
 	display: flex;

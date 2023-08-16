@@ -15,22 +15,63 @@ function Template() {
 		if(window.screen.width<576){
 			document.getElementsByClassName("animate__pulse").className = "animate__tada";
 		}
+
+		// if(window.screen.width>768){
+		// 	document.querySelector(".burgerMenu").style.display = "none"
+		// 	console.log(window.screen.width);
+		// }
+
+		const burgerMenu = document.querySelector(".burgerMenu");
+		const rollMenu = document.querySelector(".rollMenu")
+		const crossClose = document.querySelector(".crossClose")
+
+		burgerMenu.addEventListener("click", (event) =>{
+
+			rollMenu.style.display = "flex"
+			burgerMenu.style.left = "800px"
+			// burgerMenu = 
+		})
+
+		crossClose.addEventListener("click", (event) =>{
+
+			rollMenu.style.display = "none"
+			burgerMenu.style.left = "80px"
+
+			if(window.width>578){
+				burgerMenu.style.left = "80px"
+			}
+			
+			if(window.width<=578){
+				burgerMenu.style.left = "30px !important"
+			}
+		})
 	});
 
 	return (
 		<>
 			<header>
 				<div className="header">
-					<Link to="Home">
+					<Link to="/">
 						<img className="headerLogo animate__animated animate__pulse"
 							src="/icns/vr-vibes-logo.png"
 							alt="VR Vibes logo entreprise réalité virtuelle animation VR événement Paris ">
 						</img>
 					</Link>
-					<Link to="" className="itemsNav">Animation VR pour Entreprise</Link>
+					<Link to="AccueilEntreprise" className="itemsNav">Animation VR pour Entreprise</Link>
 					<Link to="" className="itemsNav">Animation VR pour Événements Familiaux</Link>
 					<Link to="" className="itemsNav">Productions VR</Link>
 					<Link to="" className="contactButton">Contact</Link>
+					<img src="/icns/burger-menu-white.svg" className="burgerMenu"/>
+					<div className="rollMenu"> 
+						<ul className="listRollMenu">
+							<img className="crossClose" src="/icns/close-button-white.svg"/>
+							<Link className="linksRollMenu" to="AccueilEntreprise"><li> Animation VR pour Entreprise </li></Link>
+							<Link className="linksRollMenu" to=""><li> Animation VR pour Événements Familiaux </li></Link>
+							<Link className="linksRollMenu" to=""><li> Productions VR </li>
+							</Link>
+							<Link className="linksRollMenu" to=""><li> Contact </li></Link>
+						</ul>
+					</div>
 				</div>
 			</header>
 

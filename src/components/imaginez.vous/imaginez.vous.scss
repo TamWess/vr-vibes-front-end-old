@@ -203,29 +203,29 @@
 		position: relative;
 		height: 1000px;
 		.background{
-			height: 1000px;
-			width: 1500px;
+			height: 1000px !important;
+			width: 1500px !important;
 		};
 		.vaisseau{
-			left: 0%;
-			margin-top: -320px;
+			left: 0% !important;
+			margin-top: -320px !important;
 		};
 		.vaisseau2{
-			left: 50%;
-			margin-top: 0px;
+			left: 50% !important;
+			margin-top: 0px !important;
 		};
 		.vaisseau3{
-			left: 40%;
-			margin-top: 630px;
+			left: 40% !important;
+			margin-top: 630px !important;
 		};
 		.planet{
-			left: 20%;
-			margin-top: -40px;
+			left: 20% !important;
+			margin-top: -40px !important;
 		};
 		.mustafar{
-			height: 800px;
-			left: -200px;
-			margin-top: -500px;
+			height: 800px !important;
+			left: -200px !important;
+			margin-top: -500px !important;
 		};
 		.title{
 			font-size: 32px;
@@ -247,5 +247,32 @@
 			margin-top: 610px;
 		}
 	}
-	
 }
+
+@media screen and (max-width: 768px) {
+	.imaginezVous{
+		.background{
+			width: 230%;
+		}
+		.vaisseau{
+			left: 15% !important;
+		}
+		.vaisseau2{
+
+			left: 50%;
+		}
+		.vaisseau3{
+			left: 67%;
+		}
+		.planet{
+			left: 20% ;
+			margin-top: -40px;
+		};
+		.mustafar{
+			height: 800px ;
+			left: -200px ;
+			margin-top: -500px ;
+		};
+	}
+}
+

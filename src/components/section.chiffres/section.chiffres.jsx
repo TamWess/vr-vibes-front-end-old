@@ -63,8 +63,6 @@ function SectionChiffres() {
 
 	})
 
-
-
 	return (
 		<div className="laVRcest">
 			<div className="badge1">

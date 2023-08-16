@@ -32,10 +32,10 @@ function Home() {
 	<>
 		<AccueilEntrepriseFamille/>
 		<Reassurance/>
-		{/* <GoogleMapSection/> */}
-		<AvisUtilisateurs/>
 		<ReserverEntrepriseFamille/>
+		<AvisUtilisateurs/>
 		<ImaginezVous/>
+		{/* <GoogleMapSection/> */}
 		<SectionChiffres/>
 		<SimpleSlider/>
 	</>

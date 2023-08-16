@@ -127,12 +127,20 @@
 
 @media screen and (max-width: 576px) {
 	.slick-track{
-		height: 210px;
+		height: 210px !important;
 	}
 	.carouselHomeImages{
-		margin: 40px 0 40px 0;
-		width: 1872px;
-		height: 120px;
+		margin: 40px 0 40px 0 !important;
+		height: 120px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.slick-track{
+		margin-top: 50px;
+	}
+	.carouselHomeImages{
+		height: 250px;
 	}
 }
 

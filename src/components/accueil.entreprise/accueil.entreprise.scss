@@ -5,6 +5,10 @@
 	overflow-y: hidden;
     overflow-x: hidden;
 	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url("../../../public/img/gradient-blue-pink.png");
+	background-size: cover;
 	.accueilImage{
 		z-index: 9;
 		position: relative;
@@ -68,7 +72,7 @@
 	.logoVRvibes{
 		z-index: 9;
 		position: absolute;
-		height: 150px;
+		height: 100px;
 		left: calc(50% - 156px);
     	top: calc(50% - 170px);
 		clip-path: polygon(0% 0%, 60% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
@@ -83,35 +87,99 @@
 		width: 300px;
 		background-color: blue;
 	}
-	.imageVREntreprise{
+	.imageVREntreprise1{
+
 		z-index: 7 !important;
-		position: absolute;
-		background-image: url(../../../public/img/vr-vibes-entreprise-accueil-test.jpg);
+		position: relative;
+		background-image: url(../../../public/img/entreprise-image-1.jpg);
 		background-color: aquamarine;
-		width: 100%;
+		width: 33%;
 		height: 600px;
 		background-size: cover;
 		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
-		clip-path: polygon(0 0, 73% 0, 30% 100%, 0% 100%);
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 	}
-	.imageVRFamille{
+	.imageVREntreprise2{
 		z-index: 7 !important;
-		position: absolute;
-		background-color: rgb(255, 221, 254);
-		background-image: url(../../../public/img/vr-vibes-famille-accueil-test.jpg);
-		width: 100%;
+		position: relative;
+		background-image: url(../../../public/img/entreprise-image-2.jpg);
+		background-color: aquamarine;
+		width: 33%;
 		height: 600px;
 		background-size: cover;
-		clip-path: polygon(73% 0, 100% 0, 100% 100%, 30% 100%);
+		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	}
+	.imageVREntreprise3{
+		z-index: 7 !important;
+		position: relative;
+		background-image: url(../../../public/img/entreprise-image-3.jpg);
+		background-color: aquamarine;
+		width: 33%;
+		height: 600px;
+		background-size: cover;
+		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	}
+
+	.animate__animated.animate__backInLeft{
+		--animate-duration: 1.5s ;
+	}
+	.animate__animated.animate__backInRight{
+		--animate-duration: 1.5s ;
+	}
+	.animate__animated.animate__backInDown{
+		--animate-duration: 1.2s ;
 	}
 }
+
+.frise1,
+.frise3,
+.frise5 {
+  right: -1500px;
+}
+.frise2,
+.frise4,
+.frise6 {
+  left: -1500px;
+}
+.frise1,
+.frise2,
+.frise3,
+.frise4,
+.frise5,
+.frise6 {
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  margin: 4% 0 0 0;
+  width: 200%;
+  opacity: 0.1;
+  filter: drop-shadow(5px 5px 5px #0000008e);
+  transition: 1s;
+}
+.frise2 {
+  margin: 10% 0 0 0;
+}
+.frise3 {
+  margin: 18% 0 0 0;
+}
+.frise4 {
+  margin: 26% 0 0 0;
+}
+.frise5 {
+  margin: 34% 0 0 0;
+}
+.frise6 {
+  margin: 42% 0 0 0;
+}
+
 @keyframes logoAnimation {
 	from{
 		clip-path: polygon(77% 0, 77% 0, 31% 100%, 31% 100%);
 	}
 	to{
 		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-		filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.709)) !important;
 	}
 }
 
@@ -127,18 +195,12 @@
 		height: 125px !important;
 		left: calc(50% - 135px) !important;
 	}
-
-	.imageVRFamille{
-			background-color: rgb(255, 221, 254);
-			background-image: url(../../../public/img/vr-vibes-famille-accueil-576px.jpg) !important;
-			
-		}
-};
-
-@media screen and (max-width: 768px ) {
 	.imageVRFamille{
 		background-color: rgb(255, 221, 254);
-		background-image: url(../../../public/img/vr-vibes-famille-accueil-768px.jpg) !important;
-		
+		background-image: url(../../../public/img/vr-vibes-famille-accueil-576px.jpg) !important;
 	}
+};
+
+@media screen and (min-width: 1200px ) {
+	
 }
