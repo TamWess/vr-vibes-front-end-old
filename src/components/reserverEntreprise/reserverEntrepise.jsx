@@ -177,15 +177,6 @@ function ReserverEntreprise() {
 					Réserver
 				</Link>
 			</div>
-			<div className="famille">
-				<h3 className="subtitleFamille">
-					Baby Shower, Anniversaire, Mariage ...
-				</h3>
-				<img className="familleChoice" src="/img/family-choice.png" />
-				<Link className="reserverFamille" to="EvenementFamille">
-					Réserver
-				</Link>
-			</div>
 			<img className="frise15" src="/img/frise-double-green-pastel.png" alt="okay" />
 			<img className="frise16" src="/img/frise-double-green-pastel.png" />
 			<img className="frise17" src="/img/frise-double-green-pastel.png" />

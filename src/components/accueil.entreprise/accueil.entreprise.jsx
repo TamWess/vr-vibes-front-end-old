@@ -6,7 +6,7 @@ import "./accueil.entreprise.scss"
 function AccueilEntreprise() {
 
 	return (
-		<div className="home">
+		<div className="home1">
 			<img className="logoVRvibes" src="/icns/vr-vibes-logo.png" />
 			{/* <div className="divTestBlue"/> */}
 			<div className="imageVREntreprise1 animate__animated animate__backInLeft" />
