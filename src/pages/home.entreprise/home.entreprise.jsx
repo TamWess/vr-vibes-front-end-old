@@ -11,12 +11,13 @@ import anime from "animejs";
 
 import AccueilEntreprise from "../../components/accueil.entreprise/accueil.entreprise";
 import Reassurance from "../../components/reassurance/reassurance.brands/reassurance.brands";
-import ReserverEntreprise from "../../components/reserverEntreprise/reserverEntrepise";
+import ReserverEntreprise from "../../components/reserverEntreprise/reserverEntreprise";
 import ImaginezVous from "../../components/imaginez.vous/imaginez.vous";
 import SimpleSlider from "../../components/carousels/carouselHome";
 import AvisUtilisateurs from "../../components/avis.utilisateurs/avis.utilisateurs";
 import SectionChiffres from "../../components/section.chiffres/section.chiffres";
-// import GoogleMapSection from "../../components/map/map"
+import GoogleMapSection from "../../components/map/map";
+
 
 function HomeEntreprise() {
 
@@ -35,7 +36,7 @@ function HomeEntreprise() {
 		<ReserverEntreprise/>
 		<AvisUtilisateurs/>
 		<ImaginezVous/>
-		{/* <GoogleMapSection/> */}
+		<GoogleMapSection/>
 		<SectionChiffres/>
 		<SimpleSlider/>
 	</>

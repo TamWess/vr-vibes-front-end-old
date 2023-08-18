@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 // dépendance parallax effets vaisseau star-wars:
+import GoogleMapSection from "../../components/map/map";
 import rallax from "rallax.js";
 import "../../utils/style/libs/base.scss"
 import "./style.scss"
@@ -35,8 +36,8 @@ function Home() {
 		<ReserverEntrepriseFamille/>
 		<AvisUtilisateurs/>
 		<ImaginezVous/>
-		{/* <GoogleMapSection/> */}
 		<SectionChiffres/>
+		<GoogleMapSection/>
 		<SimpleSlider/>
 	</>
   );

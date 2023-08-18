@@ -20,22 +20,7 @@ function ReserverEntrepriseFamille() {
 		// -------RESPONSIVE------
 		
 		if(window.screen.width<576){
-			// setTimeout(() => {
-			// 	const entrepriseFamille = document.querySelector(".entrepriseFamille");
-			// 	const subtitleFamille = document.querySelector(".subtitleFamille");
-			// 	const familleChoice = document.querySelector(".familleChoice");
-			// 	const reserverEntreprise = document.querySelector(".reserverEntreprise");
-	
-	
-			// 		entrepriseFamille.insertBefore(subtitleFamille,familleChoice);
-			// 		entrepriseFamille.insertBefore(reserverEntreprise,subtitleFamille);
-			// }, 300)		
-			frise1.remove();
-			frise2.remove();
-			frise3.remove();
-			frise4.remove();
-			frise5.remove();
-			frise6.remove();
+			
 		}	
 
 		// --------FIN DE REPONSIVE------

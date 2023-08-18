@@ -13,9 +13,24 @@ function SectionChiffres() {
 			innerHTML: [0, 4.8],
 			easing: "linear",
 			round: 50, // Will round the animated value to 1 decimal
-
-
 		});
+
+		let changeNumber2 = document.querySelector(".numbers2");
+		anime({
+			targets: changeNumber2,
+			innerHTML: [0, 8],
+			easing: "linear",
+			round: 50, // Will round the animated value to 1 decimal
+		});
+
+		let changeNumber3 = document.querySelector(".numbers3");
+		anime({
+			targets: changeNumber3,
+			innerHTML: [0, 110],
+			easing: "linear",
+			round: 50, // Will round the animated value to 1 decimal
+		});
+		
 		const divFrise = document.querySelector(".friseContainer");
 
 		// frises défilant de droite à gauche
@@ -25,8 +40,6 @@ function SectionChiffres() {
 		// frises défilant de droite à gauche
 		const frise8 = document.querySelector(".frise8");
 		
-
-
 
 		let friseRight = -1500;
 
@@ -48,7 +61,6 @@ function SectionChiffres() {
 			}
 		}, 1000)
 
-
 		let friseLeft = -1500
 
 		setInterval(() => {
@@ -60,7 +72,6 @@ function SectionChiffres() {
 			}
 		}, 1000)
 
-
 	})
 
 	return (
@@ -71,14 +82,14 @@ function SectionChiffres() {
 				<div className="sur1">/5</div>
 			</div>
 			<div className="badge2">
-				<div className="avisUtilisateurs2">Avis Utilisateurs</div>
+				<div className="avisUtilisateurs2">Nous intervenons dans</div>
 				<div className="numbers2"></div>
-				<div className="sur2">/5</div>
+				<div className="sur2">départements</div>
 			</div>
 			<div className="badge3">
-				<div className="avisUtilisateurs3">Avis Utilisateurs</div>
+				<div className="avisUtilisateurs3">Jeux disponibles</div>
 				<div className="numbers3"></div>
-				<div className="sur3">/5</div>
+				<div className="sur3"></div>
 			</div>
 			<img className="frise7" src="/img/frise-double-green-pastel.png" alt="okay"/>
 			<img className="frise8" src="/img/frise-double-green-pastel.png" />

@@ -58,7 +58,7 @@ function Template() {
 						</img>
 					</Link>
 					<Link to="AccueilEntreprise" className="itemsNav">Animation VR pour Entreprise</Link>
-					<Link to="" className="itemsNav">Animation VR pour Événements Familiaux</Link>
+					<Link to="AccueilFamille" className="itemsNav">Animation VR pour Événements Familiaux</Link>
 					<Link to="" className="itemsNav">Productions VR</Link>
 					<Link to="" className="contactButton">Contact</Link>
 					<img src="/icns/burger-menu-white.svg" className="burgerMenu"/>
@@ -66,7 +66,7 @@ function Template() {
 						<ul className="listRollMenu">
 							<img className="crossClose" src="/icns/close-button-white.svg"/>
 							<Link className="linksRollMenu" to="AccueilEntreprise"><li> Animation VR pour Entreprise </li></Link>
-							<Link className="linksRollMenu" to=""><li> Animation VR pour Événements Familiaux </li></Link>
+							<Link className="linksRollMenu" to="AccueilFamille"><li> Animation VR pour Événements Familiaux </li></Link>
 							<Link className="linksRollMenu" to=""><li> Productions VR </li>
 							</Link>
 							<Link className="linksRollMenu" to=""><li> Contact </li></Link>

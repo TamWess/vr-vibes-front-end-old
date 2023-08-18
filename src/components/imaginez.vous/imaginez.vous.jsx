@@ -25,14 +25,15 @@ function ImaginezVous() {
 		const parallaxPlanet = rallax(targetPlanet, { speed: 0.015 })
 
 		const targetTitle = document.querySelector('.title')
+		
+		// Décallage de l'apparition des textes en cascades après l'apparition du titre
+		
 		window.addEventListener('scroll', function(){
 			if (this.window.scrollY > 900){
 				targetTitle.style.left= "0px";
 				targetTitle.style.opacity= "1";
 			}
 		})
-
-		// Décallage de l'apparition des textes en cascades après l'apparition du titre
 
 		const targetText1 = document.querySelector('.text1')
 		window.addEventListener('scroll', function(){
